@@ -1,17 +1,111 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <script src="js/respond.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+    
 </head>
 <body>
-	<!-- javascript -->
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top">The Dashboard</a>
+            </li>
+            <li>
+                <a href="#top">Home</a>
+            </li>
+            <li>
+            	<a href="#">Interviews</a>
+            </li>
+            <li>
+            	<a href="#">Placement</a>
+            </li>
+            <li>
+            	<a href="#">Editorial</a>
+            </li>
+            <li>
+            	<a href="#">Clubs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>The DashBoard</h1>
+        </div>
+    </header>
+
+    <div class="row" id="bottom">
+    	<div class="breaking-news col-md-9" id="left">
+    		<h3>BREAKING NEWS</h3>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque, enim ornare maximus molestie, elit mi facilisis mauris, id volutpat mauris erat et quam. Cras non aliquet odio. Fusce in dignissim dui, at blandit est. Quisque a magna lorem. Sed at imperdiet leo, eleifend auctor ligula. Nam varius, mauris at convallis ornare, massa leo condimentum ligula, hendrerit auctor nisl quam at massa. Proin iaculis felis ut urna volutpat bibendum. Suspendisse commodo egestas ullamcorper. Sed consequat libero vitae ex luctus blandit. Sed gravida suscipit sapien non fermentum. Sed tincidunt elit vitae scelerisque luctus. </p>
+    	</div>
+    	<div class="poll col-md-3 " id="right">
+    		<form class="ac-custom ac-radio ac-circle" autocomplete="off">
+				<h3>How is the website looking?</h3>
+				<ul>
+					<li><input id="r1" name="r2" type="radio"><label for="r1">AWESOME</label></li>
+					<li><input id="r2" name="r2" type="radio"><label for="r2">GREAT</label></li>
+					<li><input id="r3" name="r2" type="radio"><label for="r3">COOL</label></li>
+					<li><input id="r4" name="r2" type="radio"><label for="r4">OKAY</label></li>
+				</ul>
+			</form>
+    	</div>	
+    </div>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+    <script src="js/svgcheckbx.js"></script>
 
 </body>
 </html>
