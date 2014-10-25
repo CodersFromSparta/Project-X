@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="js/jq/jquery.mobile-1.4.4.min.css">
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/jq/jquery.mobile-1.4.4.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/placement.css">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <SCRIPT TYPE="text/javascript">
+    $(document).ready(function () {
+        $("#ch").click(function  () {
+            $("#menu").toggle();
+        })
+    });
+
+
+
+    </SCRIPT>
+
+</head>
+<body>
+	<!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top">The Dashboard</a>
+            </li>
+            <li>
+                <a href="#top">Home</a>
+            </li>
+            <li>
+                <a href="#">Interviews</a>
+            </li>
+            <li>
+                <a href="#">Placement</a>
+            </li>
+            <li>
+                <a href="#">Editorial</a>
+            </li>
+            <li>
+                <a href="#">Clubs</a>
+            </li>
+        </ul>
+    </nav>
+    <a id="ch" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <br>
+    <div  class="col-sm-4" id="menu">
+        <ul class="nav  nav-pills nav-stacked ">
+        <li class="active"><a href="#news" data-transition="pop">N</a></li>
+            <li><a href="#company-profile" data-transition="slidefade">C</a></li>
+            <li><a href="#tips" data-transition="flow">T</a></li>
+
+        </ul>
+
+
+    </div>
+    
+    	<div  id="news" data-role="page" >
+    			<p><b>News</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque, enim ornare maximus molestie, elit mi facilisis mauris, id volutpat mauris erat et quam. Cras non aliquet odio. Fusce in dignissim dui, at blandit est. Quisque a magna lorem. Sed at imperdiet leo, eleifend auctor ligula. Nam varius, mauris at convallis ornare, massa leo condimentum ligula, hendrerit auctor nisl quam at massa. Proin iaculis felis ut urna volutpat bibendum. Suspendisse commodo egestas ullamcorper. Sed consequat libero vitae ex luctus blandit. Sed gravida suscipit sapien non fermentum. Sed tincidunt elit vitae scelerisque luctus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque, enim ornare maximus molestie, elit mi facilisis mauris, id volutpat mauris erat et quam. Cras non aliquet odio. Fusce in dignissim dui, at blandit est. Quisque a magna lorem. Sed at imperdiet leo, eleifend auctor ligula. Nam varius, mauris at convallis ornare, massa leo condimentum ligula, hendrerit auctor nisl quam at massa. Proin iaculis felis ut urna volutpat bibendum. Suspendisse commodo egestas ullamcorper. Sed consequat libero vitae ex luctus blandit. Sed gravida suscipit sapien non fermentum. Sed tincidunt elit vitae scelerisque luctus. </p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque, enim ornare maximus molestie, elit mi facilisis mauris, id volutpat mauris erat et quam. Cras non aliquet odio. Fusce in dignissim dui, at blandit est. Quisque a magna lorem. Sed at imperdiet leo, eleifend auctor ligula. Nam varius, mauris at convallis ornare, massa leo condimentum ligula, hendrerit auctor nisl quam at massa. Proin iaculis felis ut urna volutpat bibendum. Suspendisse commodo egestas ullamcorper. Sed consequat libero vitae ex luctus blandit. Sed gravida suscipit sapien non fermentum. Sed tincidunt elit vitae scelerisque luctus. </p>
+    	</div>
+    	<div  id="company-profile" data-role="page" >
+    		<p><b>Company-profile</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque, enim ornare maximus molestie, elit mi facilisis mauris, id volutpat mauris erat et quam. Cras non aliquet odio. Fusce in dignissim dui, at blandit est. Quisque a magna lorem. Sed at imperdiet leo, eleifend auctor ligula. Nam varius, mauris at convallis ornare, massa leo condimentum ligula, hendrerit auctor nisl quam at massa. Proin iaculis felis ut urna volutpat bibendum. Suspendisse commodo egestas ullamcorper. Sed consequat libero vitae ex luctus blandit. Sed gravida suscipit sapien non fermentum. Sed tincidunt elit vitae scelerisque luctus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque, enim ornare maximus molestie, elit mi facilisis mauris, id volutpat mauris erat et quam. Cras non aliquet odio. Fusce in dignissim dui, at blandit est. Quisque a magna lorem. Sed at imperdiet leo, eleifend auctor ligula. Nam varius, mauris at convallis ornare, massa leo condimentum ligula, hendrerit auctor nisl quam at massa. Proin iaculis felis ut urna volutpat bibendum. Suspendisse commodo egestas ullamcorper. Sed consequat libero vitae ex luctus blandit. Sed gravida suscipit sapien non fermentum. Sed tincidunt elit vitae scelerisque luctus. </p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque, enim ornare maximus molestie, elit mi facilisis mauris, id volutpat mauris erat et quam. Cras non aliquet odio. Fusce in dignissim dui, at blandit est. Quisque a magna lorem. Sed at imperdiet leo, eleifend auctor ligula. Nam varius, mauris at convallis ornare, massa leo condimentum ligula, hendrerit auctor nisl quam at massa. Proin iaculis felis ut urna volutpat bibendum. Suspendisse commodo egestas ullamcorper. Sed consequat libero vitae ex luctus blandit. Sed gravida suscipit sapien non fermentum. Sed tincidunt elit vitae scelerisque luctus. </p>
+
+    	</div>
+    	<div  id="tips" class="col-sm-6" data-role="page" >
+    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque, enim ornare maximus molestie, elit mi facilisis mauris, id volutpat mauris erat et quam. Cras non aliquet odio. Fusce in dignissim dui, at blandit est. Quisque a magna lorem. Sed at imperdiet leo, eleifend auctor ligula. Nam varius, mauris at convallis ornare, massa leo condimentum ligula, hendrerit auctor nisl quam at massa. Proin iaculis felis ut urna volutpat bibendum. Suspendisse commodo egestas ullamcorper. Sed consequat libero vitae ex luctus blandit. Sed gravida suscipit sapien non fermentum. Sed tincidunt elit vitae scelerisque luctus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque, enim ornare maximus molestie, elit mi facilisis mauris, id volutpat mauris erat et quam. Cras non aliquet odio. Fusce in dignissim dui, at blandit est. Quisque a magna lorem. Sed at imperdiet leo, eleifend auctor ligula. Nam varius, mauris at convallis ornare, massa leo condimentum ligula, hendrerit auctor nisl quam at massa. Proin iaculis felis ut urna volutpat bibendum. Suspendisse commodo egestas ullamcorper. Sed consequat libero vitae ex luctus blandit. Sed gravida suscipit sapien non fermentum. Sed tincidunt elit vitae scelerisque luctus. </p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque, enim ornare maximus molestie, elit mi facilisis mauris, id volutpat mauris erat et quam. Cras non aliquet odio. Fusce in dignissim dui, at blandit est. Quisque a magna lorem. Sed at imperdiet leo, eleifend auctor ligula. Nam varius, mauris at convallis ornare, massa leo condimentum ligula, hendrerit auctor nisl quam at massa. Proin iaculis felis ut urna volutpat bibendum. Suspendisse commodo egestas ullamcorper. Sed consequat libero vitae ex luctus blandit. Sed gravida suscipit sapien non fermentum. Sed tincidunt elit vitae scelerisque luctus. </p>
+
+
+    	</div>
+
+</div>
+   <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    </script>
+    <script src="js/svgcheckbx.js"></script>
+
+</body>
+</html>
